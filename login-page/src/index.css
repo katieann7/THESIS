@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: url('../src/assets/img3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mobile Devices (small screens) */
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    background-size: auto; /* Adjust background for smaller screens */
+  }
+}
+
+/* Tablets (medium screens) */
+@media only screen and (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    background-size: cover; /* Background still covers but adapts to screen */
+  }
+}
+
+/* Laptops and Desktops (large screens) */
+@media only screen and (min-width: 769px) {
+  body {
+    justify-content: center;
+    align-items: start;
+    background-size: cover;
+  }
+}
